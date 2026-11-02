@@ -1,0 +1,126 @@
+{
+  "$defs": {
+    "Component": {
+      "additionalProperties": true,
+      "properties": {
+        "ref": {
+          "title": "Ref",
+          "type": "string"
+        },
+        "mpn": {
+          "default": "",
+          "title": "Mpn",
+          "type": "string"
+        },
+        "value": {
+          "default": "",
+          "title": "Value",
+          "type": "string"
+        },
+        "footprint": {
+          "default": "",
+          "title": "Footprint",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "pins": {
+          "items": {
+            "$ref": "#/$defs/Pin"
+          },
+          "title": "Pins",
+          "type": "array"
+        }
+      },
+      "required": [
+        "ref"
+      ],
+      "title": "Component",
+      "type": "object"
+    },
+    "Net": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "connections": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Connections",
+          "type": "array"
+        },
+        "power_flag": {
+          "default": false,
+          "title": "Power Flag",
+          "type": "boolean"
+        },
+        "test_point": {
+          "default": false,
+          "title": "Test Point",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Net",
+      "type": "object"
+    },
+    "Pin": {
+      "properties": {
+        "num": {
+          "title": "Num",
+          "type": "string"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "default": "passive",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "num"
+      ],
+      "title": "Pin",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "project": {
+      "default": "board",
+      "title": "Project",
+      "type": "string"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/Component"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "nets": {
+      "items": {
+        "$ref": "#/$defs/Net"
+      },
+      "title": "Nets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "components",
+    "nets"
+  ],
+  "title": "Netlist",
+  "type": "object"
+}

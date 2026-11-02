@@ -1,0 +1,44 @@
+GVERA - Proprietary Software License
+
+Copyright (c) 2026 GVERA Technologies. All rights reserved.
+
+GVERA, including its source code, object code, compiled modules, prompts, skills, pipeline definitions,
+models of work, documentation and every other file distributed with it (the "Software"), is the
+confidential and proprietary property of GVERA Technologies ("GVERA"). The Software is licensed, not sold.
+
+1. Licence. Subject to these terms and to an active GVERA subscription, GVERA grants you a personal,
+   non-exclusive, non-transferable, revocable licence to install the Software as distributed by GVERA and
+   to use it to create your own projects. Everything you create with the Software is yours.
+
+2. Restrictions. You may not, and may not allow anyone else to:
+   a. copy, modify, translate or create derivative works of the Software;
+   b. decompile, disassemble, reverse engineer or otherwise attempt to derive the source code, prompts or
+      internal logic of the Software, except to the extent applicable law expressly permits it despite
+      this restriction;
+   c. remove, disable or circumvent any licence check, account check, usage metering, integrity check or
+      the Software's connection to GVERA Cloud, or point the Software at any other model, image, video or
+      search provider;
+   d. rent, lease, lend, sell, sublicense, distribute or publish the Software or any part of it;
+   e. use the Software to build a competing product or service.
+
+3. GVERA Cloud. AI model, image, video and web-search requests made by the Software are served through
+   GVERA Cloud under your account and are subject to your plan and to GVERA's terms of service.
+
+4. Third-party components. The Software includes or installs third-party components (for example
+   Three.js, the Geist typefaces, Phosphor icons and Python packages from PyPI) that are licensed to you
+   under their own licences, which accompany those components. Nothing in this licence limits your
+   rights under those licences.
+
+5. Termination. This licence ends automatically if you breach it or your subscription ends. On
+   termination you must stop using and delete the Software. Sections 2, 6 and 7 survive termination.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+   Designs, code and documents the Software produces must be reviewed and tested by you before use.
+
+7. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, GVERA SHALL NOT BE LIABLE FOR ANY
+   INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA OR
+   GOODWILL, AND GVERA'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE IN THE
+   TWELVE MONTHS BEFORE THE CLAIM.
+
+Contact: GVERA Technologies, https://gvera.app

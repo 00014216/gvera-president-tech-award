@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gvera://schemas/requirements.v1",
+  "title": "requirements.v1",
+  "type": "object",
+  "required": ["requirements"],
+  "properties": {
+    "version": {"type": "string"},
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "rationale", "verification_method", "priority"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^REQ-[A-Z0-9]+-[0-9]{3}$"},
+          "statement": {"type": "string", "minLength": 12},
+          "rationale": {"type": "string", "minLength": 3},
+          "verification_method": {"enum": ["analysis", "simulation", "test", "inspection", "demonstration"]},
+          "priority": {"enum": ["P1", "P2", "P3"]},
+          "source": {"type": "string"},
+          "verified_by": {"type": "array", "items": {"type": "string"}},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "status": {"enum": ["open", "verified", "waived", "failed"]}
+        }
+      }
+    }
+  }
+}
